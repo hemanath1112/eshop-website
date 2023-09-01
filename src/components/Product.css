@@ -9,7 +9,7 @@
     min-height: 100px;
 }
 .product__price{
-    display: flex;
+    display: flex ;
 }
 .product img{
     width: 100%;
