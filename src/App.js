@@ -1,14 +1,15 @@
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Checkout from "./components/Checkout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/checkout" element={<Header />} />
+          <Route path="/Checkout" element={<Checkout />} />
           <Route path="/" element={<Header />} />
           <Route index element={<Home />} />
         </Routes>
