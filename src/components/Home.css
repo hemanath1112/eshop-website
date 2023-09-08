@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     margin-right:auto;
-    max-width: 1500px;
+    max-width: 1500px; 
 }
 .home__image{
     width: 100%;

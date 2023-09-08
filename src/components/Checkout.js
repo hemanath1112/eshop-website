@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Header";
-import "./Chechkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
+import "./Chechkout.css";
 
 function Checkout() {
   return (

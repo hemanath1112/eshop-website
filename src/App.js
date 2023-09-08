@@ -9,9 +9,24 @@ function App() {
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/Checkout" element={<Checkout />} />
-          <Route path="/" element={<Header />} />
-          <Route index element={<Home />} />
+          <Route
+            path="/checkout"
+            element={
+              <>
+                <Header />
+                <Checkout />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Home />
+              </>
+            }
+          ></Route>
         </Routes>
       </Router>
     </div>

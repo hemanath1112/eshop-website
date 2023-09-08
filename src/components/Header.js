@@ -2,9 +2,9 @@ import React from "react";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
-import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
+import "./Header.css";
 
 function Header() {
   const [{ basket }] = useStateValue();
