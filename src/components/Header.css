@@ -32,12 +32,14 @@
 .header__searchInput{
     height: 32px;
     padding: 10px;
+    margin: 0px;
     border: none;
     width: 100%;
     outline: none;
 }
 .header__searchIcon{
-    padding: 5px;
+    padding: 3px;
+    width: 32px !important;
     height: 32px !important;
     background-color: #ff9f00;
 }

@@ -21,6 +21,8 @@
 }
 .product__button{
     display: flex;
+    width: 130px;
+    justify-content: center;
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
@@ -28,5 +30,4 @@
     font-weight: bold;
     margin: 10px auto;
     cursor: pointer;
-
 }

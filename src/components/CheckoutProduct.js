@@ -1,26 +1,25 @@
 import React from "react";
 import "./CheckoutProduct.css";
 
-function CheckoutProduct() {
+function CheckoutProduct({id,title, image, price, rating}) {
   return (
     <div className="cherckoutProduct">
       <div className="checkoutProduct__info">
         <img
-          src="https://cdn.luxepolis.com/media/catalog/product/cache/1/image/730x/bd67507569056040e1a66324a68684a0/f/0/f01d17b4297dbbf0b33f72bedab9baad.jpg"
+          src={image}
           alt=""
           className="chechoutProduct__image"
         />
       </div>
       <div className="checkoutProduct__details">
         <p className="checkoutProduct__title">
-          Gender : Women | Color : N/A | Size : UNI | Material : N/A | Product
-          Condition : NEW WITH TAG | Price View : As Low as | brand : Burberry |
+        {title}
         </p>
         <p className="ckeckoutProduct__price">
-          <strong> $20</strong>
+          <strong> ${price}</strong>
         </p>
         <div className="checkoutProduct__rating">
-          <p>⭐⭐⭐⭐</p>
+          <p>{rating}</p>
         </div>
 
         <button>Remove the Basket</button>

@@ -7,7 +7,7 @@ import { useStateValue } from "./StateProvider";
 import "./Header.css";
 
 function Header() {
-  const [{ basket }] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to="/" style={{ textDecoration: "none" }}>
@@ -22,10 +22,12 @@ function Header() {
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
-        <div className="nav__item">
+        <Link to="/login" style={{textDecoration:"none"}}> <div className="nav__item">
           <span className="nav__itemOne">Hello Guest</span>
           <span className="nav__itemTwo">Sign In</span>
         </div>
+        </Link>
+       
         <div className="nav__item">
           <span className="nav__itemOne">Your</span>
           <span className="nav__itemTwo">Shop</span>
